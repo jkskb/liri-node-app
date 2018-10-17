@@ -1,3 +1,9 @@
+require('dotenv').config()
+
+console.log(process.env.SPOTIFY_KEY);
+
+
+
 // Load exports from keys.js file which has Twitter auth keys
 var keys = require("./keys.js");
 var twitterCredentials = keys.twitterKeys;
