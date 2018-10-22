@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/jkskb/liri-node-app/issues"
   },
-  "homepage": "https://github.com/jkskb/liri-node-app#readme"
+  "homepage": "https://github.com/jkskb/liri-node-app#readme",
+  "dependencies": {
+    "db": "^1.0.7",
+    "dotenv": "^6.1.0",
+    "inquirer": "^6.2.0",
+    "moment": "^2.22.2",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.88.0",
+    "simple-node-logger": "^0.93.40"
+  }
 }
