@@ -41,3 +41,12 @@ spotify-this-song amazing grace
 movie-this undefined
 movie-this giant
 do-what-it-says undefined
+undefined undefined
+concert-this sting
+concert-this sting
+concert-this undefined
+spotify-this-song undefined
+spotify-this-song somewhere over the rainbow
+movie-this undefined
+movie-this giant
+do-what-it-says undefined

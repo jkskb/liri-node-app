@@ -45,13 +45,13 @@ switch (command) {
 //concert-this command
 function bandsInTown(){
 
-	var artist = quest;
+	let artist = quest;
 
 	if (artist == undefined) {
 		artist = 'Swoon';
 	}
 
-	var queryUrl = "https://rest.bandsintown.com/artists/"+artist+"/events?app_id=codingbootcamp";
+	const queryUrl = "https://rest.bandsintown.com/artists/"+artist+"/events?app_id=codingbootcamp";
 	
 	request(queryUrl, function(error, response, body) {
 		if (!error && response.statusCode === 200);
@@ -69,7 +69,7 @@ function bandsInTown(){
 //spotify-this-song-command
 function spotifyThisSong(){
 	
-	var song = quest;
+	let song = quest;
 
 	if (song == undefined) {
 		song = 'The Sign by Ace of Base';
@@ -98,7 +98,7 @@ function spotifyThisSong(){
 //movie-this command
 function movieThis(){
 
-	var movie = quest;
+	let movie = quest;
 
 	if (movie == undefined) {
 		movie = 'Mr. Nobody';
@@ -106,7 +106,7 @@ function movieThis(){
 
 	request("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy", function (error, response, body) {
         
-		var result  =  JSON.parse(body);
+		const result  =  JSON.parse(body);
 		console.log("------------------------------------------------");
 		console.log("Title: " + result.Title);
 		console.log("Release Year: " + result.Released);
