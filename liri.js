@@ -15,6 +15,8 @@ const spotify = new Spotify(keys.spotify);
 // Take 2 arguments. The first will be the command instruction to Liri and the second to what we want her to look up
 const command = process.argv[2];
 const quest = process.argv[3];
+
+// combines previous 2 process.argv to log in log.txt
 const text = command + ' ' + quest;
 
 // The switch-case will direct which function gets run.
@@ -40,7 +42,7 @@ switch (command) {
   break;
 }
 
-//Run Bands In Town command
+//concert-this command
 function bandsInTown(){
 
 	var artist = quest;
@@ -64,6 +66,7 @@ function bandsInTown(){
 	 });
 }
 
+//spotify-this-song-command
 function spotifyThisSong(){
 	
 	var song = quest;
@@ -92,6 +95,7 @@ function spotifyThisSong(){
   });
 };
 
+//movie-this command
 function movieThis(){
 
 	var movie = quest;
@@ -113,10 +117,11 @@ function movieThis(){
 		console.log("Movie Plot: " + result.Plot);
 		console.log("Actors: " +  result.Actors);
 		console.log("------------------------------------------------");
-});
+		});
 
 }
 
+//do-what-it-says command
 function doWhatItSays() {
 
 	fs.readFile('random.txt', 'utf8', function(error, data){
